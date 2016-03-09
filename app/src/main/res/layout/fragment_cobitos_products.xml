@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.GenovesaProductsFragment">
+    tools:context=".fragments.CobitosProductsFragment">
 
-    <!-- This TextView makes references to "Genovesa" Label -->
+    <!-- This TextView makes references to "Cobitos" Label -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -15,12 +15,12 @@
         android:background="#422710"
         android:padding="8dp"
         android:textColor="#FFF"
-        android:text="Genovesa"
+        android:text="Cobitos"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <!-- In this recyclerView we charge genovesa products list -->
+    <!-- In this recyclerView we charge cobitos products list -->
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewC"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />

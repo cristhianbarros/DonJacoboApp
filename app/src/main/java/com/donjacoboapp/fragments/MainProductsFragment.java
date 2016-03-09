@@ -17,7 +17,7 @@ import com.donjacoboapp.R;
  */
 public class MainProductsFragment extends Fragment {
 
-    private static int int_items = 2 ;
+    private static int int_items = 3 ;
     public static ViewPager viewPager;
     public MainProductsFragment() {
         // Required empty public constructor
@@ -50,6 +50,7 @@ public class MainProductsFragment extends Fragment {
             switch (position){
                 case 0 : return new HomeFragment();
                 case 1: return new GenovesaProductsFragment();
+                case 2: return new CobitosProductsFragment();
             }
             return null;
         }
