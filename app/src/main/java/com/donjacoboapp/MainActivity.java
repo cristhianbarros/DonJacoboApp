@@ -1,8 +1,10 @@
 package com.donjacoboapp;
 
 
+
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,12 +15,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.donjacoboapp.fragments.DialogContactFragment;
+import com.donjacoboapp.fragments.HelpFragment;
 import com.donjacoboapp.fragments.HomeFragment;
+import com.donjacoboapp.fragments.MagazineFragment;
+import com.donjacoboapp.fragments.MainProductsFragment;
+import com.donjacoboapp.fragments.NewsEventsFragment;
+import com.donjacoboapp.fragments.OurCatalogsFragment;
+import com.donjacoboapp.fragments.UsFragment;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private android.support.v4.app.Fragment fragment;
     public static android.app.FragmentManager hola;
     FragmentManager mFragmentManager = getSupportFragmentManager();
 
@@ -31,11 +39,10 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         hola = getFragmentManager();
-
-
         if(savedInstanceState == null) {
+            fragment = new MainProductsFragment();
             mFragmentManager.beginTransaction()
-                    .add(R.id.main_fragment, new HomeFragment())
+                    .add(R.id.main_fragment, fragment)
                     .commit();
 
         }
@@ -87,24 +94,41 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+         boolean TransactionFragment = false;
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.home) {
+            TransactionFragment= true;
+            fragment = new MainProductsFragment();
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.newsEvent) {
+            TransactionFragment= true;
+            fragment = new NewsEventsFragment();
+        } else if (id == R.id.catalog) {
+            TransactionFragment = true;
+            fragment= new OurCatalogsFragment();
+        } else if (id == R.id.magazine) {
+            TransactionFragment = true;
+            fragment = new MagazineFragment();
+        } else if (id == R.id.us) {
+            TransactionFragment = true;
+            fragment = new UsFragment();
+        } else if (id == R.id.contact) {
             DialogContactFragment contactFragment = new DialogContactFragment();
             contactFragment.show(getFragmentManager(),"hasdkj");
 
-
         }
+        else if (id == R.id.Help) {
+            TransactionFragment= true;
+            fragment = new HelpFragment();
+        }
+
+        if(TransactionFragment){
+            mFragmentManager.beginTransaction()
+                    .replace(R.id.main_fragment, fragment)
+                    .commit();
+        }
+
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

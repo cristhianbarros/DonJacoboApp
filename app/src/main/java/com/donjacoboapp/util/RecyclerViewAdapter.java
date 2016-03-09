@@ -25,7 +25,12 @@ import java.util.ArrayList;
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    ArrayList<Product> mListProducts = Product.getAllProducts();
+    ArrayList<Product> mListProducts;
+
+    public RecyclerViewAdapter(ArrayList<Product> ListProduct){
+        this.mListProducts = ListProduct;
+
+    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -40,10 +45,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             price = (TextView) v.findViewById(R.id.priceProduct);
             image = (ImageView) v.findViewById(R.id.imageProduct);
         }
-
-    }
-
-    public RecyclerViewAdapter() {
 
     }
 
