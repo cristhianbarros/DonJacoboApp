@@ -79,6 +79,7 @@ public class Product {
         listProduct = new ArrayList<Product>();
 
         Product heladoGenovesa = new Product("Helado Genovesa + Zepelin", 26000, R.drawable.genovesa);
+        heladoGenovesa.setDescription("Producto Original de Don Jacobo. Bizcochuelo bañado en leches y cubierto en chocolate rayado.");
         listProduct.add(heladoGenovesa);
 
         Product tresLechesChocolatoso = new Product("Tres Leches Chocolatoso", 38000, R.drawable.tres_leches_chocolatoso);

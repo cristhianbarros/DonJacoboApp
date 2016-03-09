@@ -9,17 +9,18 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.donjacoboapp.fragments.DialogContactFragment;
 import com.donjacoboapp.fragments.HomeFragment;
-import com.donjacoboapp.model.Product;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    FragmentManager mFragmentManager;
+    public static android.app.FragmentManager hola;
+    FragmentManager mFragmentManager = getSupportFragmentManager();
 
 
     @Override
@@ -29,10 +30,15 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mFragmentManager = getSupportFragmentManager();
-        mFragmentManager.beginTransaction()
-                        .add(R.id.main_fragment, new HomeFragment())
-                        .commit();
+        hola = getFragmentManager();
+
+
+        if(savedInstanceState == null) {
+            mFragmentManager.beginTransaction()
+                    .add(R.id.main_fragment, new HomeFragment())
+                    .commit();
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -93,6 +99,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
+
+            DialogContactFragment contactFragment = new DialogContactFragment();
+            contactFragment.show(getFragmentManager(),"hasdkj");
+
 
         }
 

@@ -4,14 +4,18 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.donjacoboapp.MainActivity;
 import com.donjacoboapp.R;
+import com.donjacoboapp.fragments.DialogDetailFragment;
 import com.donjacoboapp.model.Product;
 
 import java.util.ArrayList;
@@ -22,8 +26,6 @@ import java.util.ArrayList;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     ArrayList<Product> mListProducts = Product.getAllProducts();
-
-
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -55,8 +57,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
-        Product itemProduct = Product.getAllProducts().get(position);
+    public void onBindViewHolder(final ViewHolder holder, int position) {
+        final Product itemProduct = Product.getAllProducts().get(position);
 
         Glide.with(holder.itemView.getContext())
                 .load(itemProduct.getImage())
@@ -65,6 +67,15 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.title.setText(itemProduct.getName());
         holder.price.setText("$ "+itemProduct.getPrice());
+
+        holder.image.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Util.mostrarDetalleProducto(itemProduct);
+
+            }
+        });
 
     }
 
