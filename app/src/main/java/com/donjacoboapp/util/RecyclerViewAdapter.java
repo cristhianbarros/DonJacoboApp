@@ -51,7 +51,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.fragment_home_item_product_list2, parent,false);
+                    .inflate(R.layout.fragment_home_item_product_list, parent,false);
 
         return new ViewHolder(v);
     }
@@ -71,9 +71,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Util.mostrarDetalleProducto(itemProduct);
-
             }
         });
 

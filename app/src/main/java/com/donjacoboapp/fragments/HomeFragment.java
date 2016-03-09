@@ -36,10 +36,10 @@ public class HomeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView);
-//        layoutManager = new LinearLayoutManager(getActivity());
-//        recyclerView.setLayoutManager(layoutManager);
-        layoutManagerGrid = new GridLayoutManager(getActivity(),2);
-        recyclerView.setLayoutManager(layoutManagerGrid);
+        layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(layoutManager);
+//        layoutManagerGrid = new GridLayoutManager(getActivity(),2);
+//        recyclerView.setLayoutManager(layoutManagerGrid);
 
         recyclerViewAdapter = new RecyclerViewAdapter();
         recyclerView.setAdapter(recyclerViewAdapter);

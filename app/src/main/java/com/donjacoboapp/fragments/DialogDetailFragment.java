@@ -46,28 +46,25 @@ public class DialogDetailFragment extends DialogFragment {
 
         final View v = inflater.inflate(R.layout.fragment_dialog_detail_product, null);
 
-        //ImageView imageProduct = (ImageView) v.findViewById(R.id.imageProduct);
+        ImageView imageProduct = (ImageView) v.findViewById(R.id.imageProduct);
         TextView nameProduct = (TextView) v.findViewById(R.id.nameProduct);
         TextView descriptionProduct = (TextView) v.findViewById(R.id.descriptionProduct);
-        //TextView priceProduct = (TextView) v.findViewById(R.id.priceProduct);
+        TextView priceProduct = (TextView) v.findViewById(R.id.priceProduct);
 
-//        Glide.with(getActivity().getApplicationContext())
-//                .load(product.getImage())
-//                .centerCrop()
-//                .into(imageProduct);
+        Glide.with(getActivity().getApplicationContext())
+                .load(product.getImage())
+                .centerCrop()
+                .into(imageProduct);
 
         nameProduct.setText(product.getName());
         descriptionProduct.setText(getProduct().getDescription());
-        //priceProduct.setText(String.valueOf(getProduct().getPrice()));
-
-
+        priceProduct.setText("Precio: $ "+String.valueOf(getProduct().getPrice()));
 
         builder.setView(v)
                 .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-
-                        dialog.cancel();
+                        dialog.dismiss();
                     }
                 });
 
