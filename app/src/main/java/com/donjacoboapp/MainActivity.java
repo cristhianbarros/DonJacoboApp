@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -117,10 +118,11 @@ public class MainActivity extends AppCompatActivity
             contactFragment.show(getFragmentManager(),"hasdkj");
 
         }
-        else if (id == R.id.Help) {
+        else if (id == R.id.Help){
             TransactionFragment= true;
             fragment = new HelpFragment();
         }
+
 
         if(TransactionFragment){
             mFragmentManager.beginTransaction()
@@ -128,10 +130,9 @@ public class MainActivity extends AppCompatActivity
                     .commit();
         }
 
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }

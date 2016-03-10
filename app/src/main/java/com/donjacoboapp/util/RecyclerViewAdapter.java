@@ -59,7 +59,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        final Product itemProduct = Product.getAllProducts().get(position);
+        final Product itemProduct = mListProducts.get(position);
 
         Glide.with(holder.itemView.getContext())
                 .load(itemProduct.getImage())

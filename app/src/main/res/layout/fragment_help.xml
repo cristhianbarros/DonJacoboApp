@@ -1,13 +1,32 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.donjacoboapp.fragments.HelpFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="#422710"
+        android:padding="8dp"
+        android:textColor="#FFF"
+        android:text="Todos los productos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Help" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="#422710"
+        android:padding="8dp"
+        android:textColor="#FFF"
+        android:text="Todos los productos"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
-</FrameLayout>
+</LinearLayout>
