@@ -1,9 +1,6 @@
 package com.donjacoboapp.model;
 
-import com.donjacoboapp.R;
-
 import java.util.ArrayList;
-import java.util.Collections;
 
 /**
  * Created by cristhian.barros on 06/03/2016.
@@ -75,7 +72,7 @@ public class Product {
         this.image = image;
     }
 
-    public static ArrayList<Product> getAllProducts() {
+   /* public static ArrayList<Product> getAllProducts() {
 
         listProduct = new ArrayList<Product>();
 
@@ -115,5 +112,5 @@ public class Product {
 
 
         return listProduct;
-    }
+    }*/
 }

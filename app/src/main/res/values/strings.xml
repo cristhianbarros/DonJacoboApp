@@ -9,6 +9,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- Splash Screen -->
+    <string name="text">CARGANDO....</string>
+
 
     <!-- Dialog Contact Fragment -->
     <string name="dialog_contact_txt">Llevamos tu dulzura donde tú quieras\n Para comunicarte con nosotros diligencia el siguiente formulario con tus datos y nos pondremos en contacto contigo.</string>
@@ -43,4 +46,62 @@
     <string name="txt_asunto">Asunto</string>
     <string name="txt_mensaje">Mensaje</string>
     <string name="btn_enviar">Enviar</string>
+
+    <!-- Strings UsFragment -->
+
+    <string name="title_historia">Historia</string>
+    <string name="txt_historia_1">Durante 25 años, en Don Jacobo Postres y Ponqués escribimos nuestra historia día a día, consolidándonos como la más importante empresa de repostería de Colombia y expandiendo nuestra dulzura al mundo, cada día acercándonos cada vez más a nuestros sueños.\n Don Jacobo Postres y Ponqués \n ¡Una marca dinámica!</string>
+    <string name="txt_historia_2">La marca Don Jacobo, que hoy estamos presentando tanto en el mercado Colombiano como en el Internacional, es el resultado de casi 25 años de una marca soñada por su fundador, quien por los años ochentas, pensó en la creación de “POSTRES”, palabra genérica que definía todo lo que él quería vender como complemento al portafolio del negocio de sus padres, dedicado exclusivamente a vender el tradicional Ponqué.
+
+    En 1986 la marca se convierte en POSTRES Y PONQUÉS, y es así como nace la cadena de repostería más grande de Colombia, con una marca genérica que describe en dos palabras el objetivo comercial, la producción y venta de repostería dulce.
+
+    Su portafolio de productos se ha convertido en un amplio universo de postres, tortas, porqués y muchas creaciones de recetas propias, como la ya famosa GENOVESA, que han endulzado por décadas la vida de sus clientes.
+
+    En los años noventa, la compañía adquiere como nombre corporativo “Industrias de Alimentos Don Jacobo”, haciendo el registro de la marca Don Jacobo en la categoría 30 internacional y con cobertura en toda Latinoamérica. Bajo este nombre fue siendo reconocida por sus proveedores y el sector financiero, igualmente por los empleados de la compañía, quienes se autodenominaron “Gente Don Jacobo”. Comercialmente se siguieron viendo hasta finales del siglo XX los reconocidos avisos de sus fachadas, en fondo color blanco, acompañados de las palabras Postres &amp; Ponqués, que en letra clásica con rebordes dorados connotaban la calidad que siempre se ha querido ofrecer a la clientela; esta marca estaba acompañada de un logo sencillo, dibujado en trazos de dos líneas, que daban forma a un porqué con su moño decorativo, evocando el símbolo de celebración de esos momentos especiales que alegran nuestras vidas.
+
+    Llegado el nuevo siglo se vio la necesidad de integrar de manera armónica la ya reconocida marca POSTRES Y PONQUÉS con el nombre corporativo Industria de Alimentos Don Jacobo, que junto con un cambio de imagen y diseño de sus puntos de venta, mostró el resultado obtenido durante las décadas anteriores en cuanto a posicionamiento en el mercado nacional y en el exterior.
+
+    Es así como surge \" POSTRES Y PONQUÉS DON JACOBO ™\", con su característico color verde y en donde las letras en blanco le dan el lustre que tienen sus tortas y el detalle impecable de su símbolo, un porqué ahora en volumen actualizando el símbolo anterior.
+    Estos dos elementos, las palabras y el nuevo símbolo se acompañaron de la firma DON JACOBO (marca registrada), que en tono verde reflejaba el continuo crecimiento y vida de la empresa.
+
+    Transcurrida la primera década del siglo XXI y cercanos a cumplir sus 25 años de marcados desarrollo en la creación e ingreso de nuevos productos, especialización en producción, apertura de puntos de venta y de gran posicionamiento en el mercado, sus directivos detectaron la fuerza de la marca DON JACOBO, por contener en sólo dos palabras la experiencia adquirida durante este tiempo y el potencial de un futuro lleno de oportunidades para una empresa dinámica, en constante evolución y desarrollo que centra su mirada en mejorar el servicio a sus clientes. Es así como vestida de color chocolate, el favorito de grandes y pequeños a la hora del postre o del pastel, se presenta a todos; DON JACOBO (marca registrada) acompañada de la descripción genérica Postres y Ponqués, una marca impecable que es más que eso, es la firma que respalda el conocimiento, el compromiso e ímpetu de quienes están detrás del negocio.
+
+    Esta marca reúne la experiencia, trabajo y compromiso de la gente en sus centros de producción y puntos de venta, para hacer de esos momentos especiales auténticos momentos de felicidad, es la garantía de calidad de cada uno de sus productos y es el deseo vehemente de mantener con esfuerzo y dedicación, el liderazgo en el negocio de la repostería dulce en Colombia y fuera de ella.
+
+    La marca DON JACOBO en su exquisito color chocolate no está sola, está sobre el verde que distingue a esta gran cadena de repostería a nivel nacional y con la que encontramos una gran paleta de colores que identifica la variedad y lo atractivo de todos los elementos que, puestos de manera artística, hacen de cada Torta, Postre o Ponqué un elemento único y especial, capaz de llenarnos de alegría en cada dulce momento de nuestras vidas.</string>
+
+
+    <string name="title_filosofia">Filosofía</string>
+    <string name="txt_filosofia_1">En Don Jacobo Postres y Ponqués creemos firmemente que la clave del éxito es ser fieles a nuestra ideología, a nuestra forma de ver tanto la vida como los negocios y esto es siempre la razón de ser de nuestras acciones.</string>
+    <string name="title_filosofia_1">VALORES CENTRALES:</string>
+    <string name="txt_filosofia_2">Orientación al Logro: Valoramos el cumplimiento de los objetivos y metas adquiridas con responsabilidad y compromiso.
+
+    Dinamismo: Buscamos mejorar permanentemente a través de la creatividad e innovación con el fin de adaptarnos a las necesidades de nuestros clientes.
+
+    Actitud Comercial: Logramos el cierre de la venta y buscamos que nuestros clientes queden siempre satisfechos. Calidad: Buscamos siempre los mejores insumos y trabajamos por lograr procesos eficientes con el fin de entregar al cliente productos de excelentes características.
+
+    Respeto: Sabemos escuchar. Aceptamos las diferencias de nuestros colaboradores y clientes; buscamos cumplir con sus expectativas.</string>
+    <string name="title_filosofia_2">PROPÓSITO CENTRAL:</string>
+    <string name="txt_filosofia_3">Estar cerca de nuestros clientes para ofrecerles productos de repostería dulce de excelente calidad, saludable y elaborados a la vista, que los acompañen en toda ocasión y en cualquier lugar.</string>
+
+    <string name="title_vision">Visión</string>
+    <string name="txt_vision_1">Don Jacobo Postres y Ponqués ha desarrollado una imagen corporativa uniforme que a través de los años se ha apoyado en una estructura sólida.</string>
+    <string name="txt_vision_2">Don Jacobo Postres y Ponqués ha logrado convertirse en la marca más reconocida y querida por los clientes en el sector de repostería dulce y se ha consolidado como la cadena de pastelería y repostería con mayor presencia a nivel nacional y en el mercado latino dentro de este sector.
+
+Su estrategia comercial basada en la innovación, la creatividad, la cercanía con el cliente y el dinamismo, unida a la excelente calidad en sus procesos y productos y al liderazgo en el servicio le han permitido incrementar la fidelidad de sus clientes, quienes prefieren siempre sus productos.
+
+Gran parte del éxito de Don Jacobo Postres y Ponqués, el cual le ha permitido satisfacer los requerimientos de sus accionistas, se debe a su equipo de colaboradores, quienes a lo largo de los años se han caracterizado por su participación, compromiso y su interés en lograr la satisfacción de sus clientes con productos de calidad y con un excelente servicio.
+
+Así pues, Don Jacobo Postres y Ponqués se perfila como una de las empresas más rentables y prósperas del país y continuará siendo gran generador de empleo y fuente de desarrollo por muchos años.</string>
+
+    <string name="title_dulces_tesoro">Dulces Tesoro</string>
+    <string name="title_dulces_tesoro_1">BENEFICIOS</string>
+    <string name="title_dulces_tesoro_2">INSCRIPCIONES</string>
+    <string name="title_dulces_tesoro_3">CÓMO REDIMIR</string>
+
+    <string name="txt_dulces_tesoro_1">Inscríbete en el programa DULCES TESOROS y recibe dulces beneficios\n“DON JACOBO POSTRES Y PONQUÉS Celebra tu cumpleaños regalándote un Cobito”</string>
+    <string name="txt_dulces_tesoro_2">El día de tu cumpleaños te obsequiamos un COBITO para endulzar tu día. Por cada compra que realices acumulas el 3% del valor de tu factura para redimir entus productos favoritos. Acumulas dinero extra en días especiales.</string>
+    <string name="txt_dulces_tesoro_3">Acércate a cualquiera de los puntos de venta DON JACOBO del país y nuestros asesores de venta realizarán tu inscripción; solo necesitamos tus datos personales y registro de huella.</string>
+    <string name="txt_dulces_tesoro_4">Puedes redimir el dinero acumulado en tus productos favoritos en el momento que desees, solo válido en Productos DON JACOBO. Es indispensable tu presencia en el punto de venta y registro de huella para recibir el beneficio.</string>
+    <string name="txt_dulces_tesoro_5">Es indispensable tu presencia en el punto de venta y registro de tu huella para recibir el beneficio.</string>
 </resources>

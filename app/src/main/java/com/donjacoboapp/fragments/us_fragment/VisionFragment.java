@@ -1,4 +1,4 @@
-package com.donjacoboapp.fragments;
+package com.donjacoboapp.fragments.us_fragment;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.donjacoboapp.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class UsFragment extends Fragment {
+public class VisionFragment extends Fragment {
 
 
-    public UsFragment() {
+    public VisionFragment() {
         // Required empty public constructor
     }
 
@@ -24,8 +24,7 @@ public class UsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_us, container, false);
-        return v;
+        return inflater.inflate(R.layout.fragment_vision, container, false);
     }
 
 }

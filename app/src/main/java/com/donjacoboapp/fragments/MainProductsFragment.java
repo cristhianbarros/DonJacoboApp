@@ -48,7 +48,7 @@ public class MainProductsFragment extends Fragment {
         public Fragment getItem(int position)
         {
             switch (position){
-                case 0 : return new HomeFragment();
+                case 0: return new HomeFragment();
                 case 1: return new GenovesaProductsFragment();
                 case 2: return new CobitosProductsFragment();
             }
