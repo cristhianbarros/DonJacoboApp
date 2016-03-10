@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.donjacoboapp.fragments.TortasChocolateProductsFragment">
+
+    <!-- This TextView makes references to "Tortas de Chocolate" Label -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="#422710"
+        android:padding="8dp"
+        android:textColor="#FFF"
+        android:text="Tortas de Chocolate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- In this recyclerView we charge Tortas de chocolate products list -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
