@@ -5,35 +5,28 @@
         >
         <item
             android:id="@+id/home"
-            android:icon="@drawable/ic_menu_camera"
             android:title="Inicio" />
         <item
             android:id="@+id/newsEvent"
-            android:icon="@drawable/ic_menu_gallery"
             android:title="Noticas y Eventos" />
         <item
             android:id="@+id/catalog"
-            android:icon="@drawable/ic_menu_slideshow"
             android:title="Nuestros Catalogos" />
         <item
             android:id="@+id/magazine"
-            android:icon="@drawable/ic_menu_slideshow"
             android:title="Don Jacobo Magazine" />
         <item
             android:id="@+id/us"
-            android:icon="@drawable/ic_menu_manage"
             android:title="Nosotros" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Comunicate">
         <menu>
             <item
                 android:id="@+id/contact"
-                android:icon="@drawable/ic_menu_send"
                 android:title="Contactenos" />
             <item
                 android:id="@+id/Help"
-                android:icon="@drawable/ic_menu_share"
                 android:title="¿Necesitas Ayuda?" />
         </menu>
     </item>

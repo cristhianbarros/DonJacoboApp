@@ -35,11 +35,14 @@ public class UsFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_us, container, false);
 
-        viewPager = (ViewPager) v.findViewById(R.id.viewPager);
-        setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) v.findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(viewPager);
+        if(savedInstanceState == null) {
+            viewPager = (ViewPager) v.findViewById(R.id.viewPager);
+            setupViewPager(viewPager);
+
+            tabLayout = (TabLayout) v.findViewById(R.id.tabs);
+            tabLayout.setupWithViewPager(viewPager);
+        }
 
         return v;
     }

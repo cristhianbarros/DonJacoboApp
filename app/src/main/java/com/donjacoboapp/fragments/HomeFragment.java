@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.donjacoboapp.MainActivity;
 import com.donjacoboapp.R;
 import com.donjacoboapp.model.Product;
 import com.donjacoboapp.util.RecyclerViewAdapter;
@@ -39,7 +38,7 @@ public class HomeFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Home");
+//        ((MainActivity)getActivity()).getSupportActionBar().setTitle("Home");
 
 
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView);

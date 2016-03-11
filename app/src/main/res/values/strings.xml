@@ -10,7 +10,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!-- Splash Screen -->
-    <string name="text">CARGANDO....</string>
+    <string name="text">Cargando....</string>
 
 
     <!-- Dialog Contact Fragment -->

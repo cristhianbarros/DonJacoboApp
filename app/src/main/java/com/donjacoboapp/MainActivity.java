@@ -1,28 +1,24 @@
 package com.donjacoboapp;
 
 
-
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.donjacoboapp.fragments.DialogContactFragment;
 import com.donjacoboapp.fragments.HelpFragment;
-import com.donjacoboapp.fragments.HomeFragment;
 import com.donjacoboapp.fragments.MagazineFragment;
 import com.donjacoboapp.fragments.MainProductsFragment;
 import com.donjacoboapp.fragments.NewsEventsFragment;
 import com.donjacoboapp.fragments.OurCatalogsFragment;
-import com.donjacoboapp.fragments.UsFragment;
+import com.donjacoboapp.fragments.us_fragment.UsFragment;
 
 
 public class MainActivity extends AppCompatActivity

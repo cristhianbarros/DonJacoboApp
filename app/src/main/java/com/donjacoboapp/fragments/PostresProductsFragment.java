@@ -35,7 +35,7 @@ public class PostresProductsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_genovesa_products, container, false);
+        View v = inflater.inflate(R.layout.fragment_postres_products, container, false);
         recyclerView = (RecyclerView) v.findViewById(R.id.recyclerView);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);

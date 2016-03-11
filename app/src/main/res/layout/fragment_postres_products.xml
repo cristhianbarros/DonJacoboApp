@@ -6,6 +6,8 @@
     tools:context="com.donjacoboapp.fragments.PostresProductsFragment">
 
     <!-- This TextView makes references to "postres" Label -->
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -17,6 +19,7 @@
         android:textColor="#FFF"
         android:text="Postres"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
 
     <!-- In this recyclerView we charge postres products list -->
     <android.support.v7.widget.RecyclerView
