@@ -44,11 +44,13 @@ public class GenovesaProductsFragment extends Fragment {
         Product milkos = new Product("Milkos","Exquisita torta esponjosa de chocolate bañada en una cremosa malteada del mismo sabor, con una sabrosa cubierta de cacao y chocolate rayado forman la combinación perfecta.",42000, R.drawable.tres_leches_chocolatoso);
         Product genovesaNociolle = new Product("Genovesa® Nocciole*","Crema de avellanas y chocolate. ¡Única! ¡Exclusiva! ¡La nueva sensación! ¡Tienes que probarla!\n \n Esta nueva torta reúne dos grandes  creaciones gastronómicas: la original GENOVESA® de Don Jacobo Postres y Ponqués y una deliciosa crema de avellanas y chocolate. Juntas se convierten en una delicia que hacen balance en dulzura y suavidad. La torta se complementa con un novedoso cereal recubierto en chocolate blanco y chocolate semiamargo (igualmente exclusivo de Don Jacobo Postres y Ponqués), cuya crocancia le da un toque adicional que hará de ésta la preferida de chicos y grandes.",44000,R.drawable.genovesa_nociello);
         Product cobitoGenovesa = new Product("Cobito® Genovesa", "Porción del Producto Original de Don Jacobo. Bizcochuelo bañado en leches y cubierto en chocolate rayado.", 8000, R.drawable.cobito_genovesa);
+        Product milkosfresa= new Product("Milkos de fresa","Torta esponjosa de vainilla, remojada con una malteada saborizada con notas de fresa y recubierta con una delicada capa de merengue italiano.",42000,R.drawable.milkos_de_fresa);
         listProduct = new ArrayList<Product>();
         listProduct.add(genovesa);
         listProduct.add(milkos);
         listProduct.add(genovesaNociolle);
         listProduct.add(cobitoGenovesa);
+        listProduct.add(milkosfresa);
         recyclerViewAdapter = new RecyclerViewAdapter(listProduct);
         recyclerView.setAdapter(recyclerViewAdapter);
         return v;

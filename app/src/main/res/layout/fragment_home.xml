@@ -17,7 +17,7 @@
         android:padding="8dp"
         android:textColor="#FFF"
         android:text="Todos los productos"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 
     <!-- In this recyclerView we charge all products list -->
     <android.support.v7.widget.RecyclerView

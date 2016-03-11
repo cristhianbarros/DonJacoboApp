@@ -1,23 +1,28 @@
 package com.donjacoboapp;
 
 
+
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.donjacoboapp.fragments.DialogContactFragment;
 import com.donjacoboapp.fragments.HelpFragment;
+import com.donjacoboapp.fragments.HomeFragment;
 import com.donjacoboapp.fragments.MagazineFragment;
 import com.donjacoboapp.fragments.MainProductsFragment;
 import com.donjacoboapp.fragments.NewsEventsFragment;
 import com.donjacoboapp.fragments.OurCatalogsFragment;
-import com.donjacoboapp.fragments.us_fragment.UsFragment;
+import com.donjacoboapp.fragments.UsFragment;
 
 
 public class MainActivity extends AppCompatActivity
@@ -31,9 +36,9 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         hola = getFragmentManager();
         if(savedInstanceState == null) {
             fragment = new MainProductsFragment();
@@ -63,6 +68,27 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -92,10 +118,11 @@ public class MainActivity extends AppCompatActivity
             contactFragment.show(getFragmentManager(),"hasdkj");
 
         }
-        else if (id == R.id.Help) {
+        else if (id == R.id.Help){
             TransactionFragment= true;
             fragment = new HelpFragment();
         }
+
 
         if(TransactionFragment){
             mFragmentManager.beginTransaction()
@@ -103,10 +130,9 @@ public class MainActivity extends AppCompatActivity
                     .commit();
         }
 
-
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 }

@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.donjacoboapp.fragments.HelpFragment">
+    tools:context="com.donjacoboapp.fragments.PostresProductsFragment">
 
-
+    <!-- This TextView makes references to "postres" Label -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -15,18 +15,14 @@
         android:background="#422710"
         android:padding="8dp"
         android:textColor="#FFF"
-        android:text="Todos los productos"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:text="Postres"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
-    <TextView
+    <!-- In this recyclerView we charge postres products list -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:background="#422710"
-        android:padding="8dp"
-        android:textColor="#FFF"
-        android:text="Todos los productos"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
 
 </LinearLayout>

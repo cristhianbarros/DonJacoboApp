@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bumptech.glide.manager.SupportRequestManagerFragment;
 import com.donjacoboapp.R;
 
 /**
@@ -17,7 +18,7 @@ import com.donjacoboapp.R;
  */
 public class MainProductsFragment extends Fragment {
 
-    private static int int_items = 3 ;
+    private static int int_items = 13;
     public static ViewPager viewPager;
     public MainProductsFragment() {
         // Required empty public constructor
@@ -51,6 +52,16 @@ public class MainProductsFragment extends Fragment {
                 case 0: return new HomeFragment();
                 case 1: return new GenovesaProductsFragment();
                 case 2: return new CobitosProductsFragment();
+                case 3: return new JacobinosProductsFragment();
+                case 4: return new PostresProductsFragment();
+                case 5: return new TortasChocolateProductsFragment();
+                case 6: return new TortasFriasProductsFragment();
+                case 7: return new TortasDulcesProductsFragment();
+                case 8: return new ColombiaProductsFragment();
+                case 9: return new AccesoriosProductsFragment();
+                case 10:return new NavidadProductsFragment();
+                case 11:return new TresLechesProductsFragment();
+                case 12:return new OtrosProductsFragment();
             }
             return null;
         }
