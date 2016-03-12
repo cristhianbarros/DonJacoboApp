@@ -10,12 +10,6 @@
             android:id="@+id/newsEvent"
             android:title="Noticas y Eventos" />
         <item
-            android:id="@+id/catalog"
-            android:title="Nuestros Catalogos" />
-        <item
-            android:id="@+id/magazine"
-            android:title="Don Jacobo Magazine" />
-        <item
             android:id="@+id/us"
             android:title="Nosotros" />
     </group>
@@ -27,7 +21,7 @@
                 android:title="Contactenos" />
             <item
                 android:id="@+id/Help"
-                android:title="¿Necesitas Ayuda?" />
+                android:title="Encuentranos" />
         </menu>
     </item>
 

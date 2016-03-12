@@ -18,14 +18,20 @@ import com.donjacoboapp.fragments.MainProductsFragment;
 import com.donjacoboapp.fragments.OurCatalogsFragment;
 import com.donjacoboapp.fragments.news_events.NewsEventsFragment;
 import com.donjacoboapp.fragments.us_fragment.UsFragment;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private android.support.v4.app.Fragment fragment;
     public static android.app.FragmentManager hola;
-    FragmentManager mFragmentManager = getSupportFragmentManager();
 
+    FragmentManager mFragmentManager = getSupportFragmentManager();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +39,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         hola = getFragmentManager();
         if(savedInstanceState == null) {
             fragment = new MainProductsFragment();
@@ -78,13 +83,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.newsEvent) {
             TransactionFragment= true;
             fragment = new NewsEventsFragment();
-        } else if (id == R.id.catalog) {
-            TransactionFragment = true;
-            fragment= new OurCatalogsFragment();
-        } else if (id == R.id.magazine) {
-            TransactionFragment = true;
-            fragment = new MagazineFragment();
-        } else if (id == R.id.us) {
+        }  else if (id == R.id.us) {
             TransactionFragment = true;
             fragment = new UsFragment();
         } else if (id == R.id.contact) {
@@ -109,4 +108,5 @@ public class MainActivity extends AppCompatActivity
 
         return true;
     }
+
 }

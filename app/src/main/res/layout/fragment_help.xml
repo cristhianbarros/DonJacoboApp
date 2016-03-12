@@ -5,7 +5,6 @@
     android:orientation="vertical"
     tools:context="com.donjacoboapp.fragments.HelpFragment">
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -15,8 +14,14 @@
         android:background="#422710"
         android:padding="8dp"
         android:textColor="#FFF"
-        android:text="Podemos Ayudarte"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:text="Puntos de Atención"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:tag="map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
