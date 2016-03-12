@@ -1,8 +1,10 @@
 package com.donjacoboapp.util;
 
 import android.app.Fragment;
-import android.app.FragmentManager;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.widget.Toast;
 
 import com.donjacoboapp.MainActivity;
@@ -27,5 +29,16 @@ public class Util  extends Fragment{
         DialogDetailFragment detalleProducto = new DialogDetailFragment();
         detalleProducto.setProduct(producto);
         detalleProducto.show(MainActivity.hola, "lkjasdlkj");
+    }
+
+    public void enviarEmail(String[] addresses, String subject, PackageManager packageManager) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent);
+        }
     }
 }

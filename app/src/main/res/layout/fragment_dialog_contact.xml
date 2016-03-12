@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="5dp"
+    android:padding="15dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/dialog_contact_txt"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -55,6 +51,7 @@
 
     <Spinner
         android:id="@+id/spr_ciudades"
+        android:padding="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -78,7 +75,7 @@
             android:id="@+id/edt_mensaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textLongMessage"
+            android:inputType="text"
             android:hint="@string/txt_mensaje" />
     </android.support.design.widget.TextInputLayout>
 

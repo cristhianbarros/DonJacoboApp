@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.donjacoboapp.fragments.NewsEventsFragment">
+    tools:context=".fragments.news_events.NewsEventsFragment">
 
     <TextView
         android:id="@+id/textView"
@@ -18,7 +18,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerNews"
+        android:id="@+id/recyclerViewsNews"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="vertical" />

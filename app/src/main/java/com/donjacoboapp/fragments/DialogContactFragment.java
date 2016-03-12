@@ -5,16 +5,13 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.SpinnerAdapter;
-import android.widget.Toast;
 
 import com.donjacoboapp.R;
 import com.donjacoboapp.util.Util;
@@ -49,7 +46,7 @@ public class DialogContactFragment extends DialogFragment {
 
         // Por último añadimos el adaptador a el spinner
         spinnerCiudad.setAdapter(adapterSpinner);
-
+        builder.setTitle("Contacténos");
         builder.setView(v)
                 .setPositiveButton("Enviar", new DialogInterface.OnClickListener() {
                             @Override
@@ -59,8 +56,15 @@ public class DialogContactFragment extends DialogFragment {
                                 EditText email = (EditText)v.findViewById(R.id.edt_correo);
                                 EditText asunto = (EditText)v.findViewById(R.id.edt_asunto);
                                 EditText telefono = (EditText)v.findViewById(R.id.edt_telefono);
-                                EditText mensaje = (EditText)v.findViewById(R.id.edt_asunto);
+                                EditText mensaje = (EditText)v.findViewById(R.id.edt_mensaje);
                                 Spinner spinnerCiudad = (Spinner)v.findViewById(R.id.spr_ciudades);
+
+                                String strNombre = nombre.getText().toString();
+                                String strEmail = email.getText().toString();
+                                String strAsunto = asunto.getText().toString();
+                                String strTelefono = telefono.getText().toString();
+                                String strMensaje = mensaje.getText().toString();
+                                String strCiudad = spinnerCiudad.getSelectedItem().toString();
 
                                 String msj = "Nombre: "+nombre.getText()+"\n"
                                                 +"Email: "+email.getText()+"\n"
@@ -69,15 +73,19 @@ public class DialogContactFragment extends DialogFragment {
                                                 +"Mensaje: "+mensaje.getText()+"\n"
                                                 +"Ciudad: "+spinnerCiudad.getSelectedItem().toString();
 
-                                //Util.mostrarMensaje(getActivity().getApplicationContext(), msj);
+                                String[] emails = {strEmail};
 
-                                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                                intent.setData(Uri.parse("mailto:")); // only email apps should handle this
+                                intent.putExtra(Intent.EXTRA_EMAIL , emails);
+                                intent.putExtra(Intent.EXTRA_SUBJECT, strAsunto);
+                                intent.putExtra(Intent.EXTRA_TEXT,msj);
 
-                                emailIntent.putExtra(Intent.EXTRA_EMAIL, email.getText());
-                                emailIntent.putExtra(Intent.EXTRA_SUBJECT,asunto.getText());
-                                emailIntent.setType("message/rfc822");
-
-                                startActivity(Intent.createChooser(emailIntent,"Elige una aplicación de correo:"));
+                                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                                    startActivity(intent);
+                                } else {
+                                    Util.mostrarMensaje(getActivity().getApplicationContext(),"No dispones de una aplicación para realizar esta acción.");
+                                }
 
                                 //dialog.cancel();
                             }

@@ -13,11 +13,11 @@
         android:layout_above="@+id/LoadingTxt"
         android:layout_centerHorizontal="true" />
 
-    <TextView
+    <ImageView
         android:id="@+id/LoadingTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text"
+        android:src="@drawable/cargando2"
         android:textColor="#422710"
         android:textSize="15sp"
         android:typeface="serif"
