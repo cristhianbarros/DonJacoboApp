@@ -104,4 +104,69 @@ Así pues, Don Jacobo Postres y Ponqués se perfila como una de las empresas má
     <string name="txt_dulces_tesoro_3">Acércate a cualquiera de los puntos de venta DON JACOBO del país y nuestros asesores de venta realizarán tu inscripción; solo necesitamos tus datos personales y registro de huella.</string>
     <string name="txt_dulces_tesoro_4">Puedes redimir el dinero acumulado en tus productos favoritos en el momento que desees, solo válido en Productos DON JACOBO. Es indispensable tu presencia en el punto de venta y registro de huella para recibir el beneficio.</string>
     <string name="txt_dulces_tesoro_5">Es indispensable tu presencia en el punto de venta y registro de tu huella para recibir el beneficio.</string>
+
+<!--string for maps-->
+    <!--Medellin-->
+    <string name="poblado">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 43 A # 25 A - 09 &lt;br/> &lt;b>Teléfono:&lt;/b> 3662424</string>
+    <string name="lamota">&lt;b>Dirección:&lt;/b> &lt;br/>Diagonal 75 B # 8 - 40&lt;br/>Local 870 &lt;br/> &lt;b>Teléfono:&lt;/b> 4483399</string>
+    <string name="bello">&lt;b>Dirección:&lt;/b> &lt;br/>Boulevar 55 Diagonal 55 # 38 - 55&lt;br/>Local 137 &lt;br/> &lt;b>Teléfono:&lt;/b> 4826384 - 4531312</string>
+    <string name="envigado">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 38 sur # 41 - 06 &lt;br/> &lt;b>Teléfono:&lt;/b> 2760789 - 3023419</string>
+    <string name="floresta">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 80 # 48B - 15 &lt;br/> &lt;b>Teléfono:&lt;/b> 4483399</string>
+    <string name="laplaya">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 52 # 43 - 60 &lt;br/> &lt;b>Teléfono:&lt;/b> 2515963</string>
+    <string name="laureles">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 74 # 39 D -15 &lt;br/> &lt;b>Teléfono:&lt;/b> 4483399</string>
+    <string name="sabaneta">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 70 Sur # 46 - 41&lt;br/>Int. 3 &lt;br/> &lt;b>Teléfono:&lt;/b> 3065506</string>
+    <string name="sucpoblado">&lt;b>Dirección:&lt;/b> &lt;br/>Avenida Las Vegas &lt;br/>Carrera 48 # 16Sur - 103 &lt;br/> &lt;b>Teléfono:&lt;/b> 4483399</string>
+    <!--Amrnenia-->
+    <string name="armenia">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 14 # 9 Norte - 69&lt;br/>Local 1 &lt;br/> &lt;b>Teléfono:&lt;/b> 7457745</string>
+    <!--Brrancabermneja-->
+    <string name="elrecreo">&lt;b>Dirección:&lt;/b> &lt;br/>Diagonal 49 # 27 - 03&lt;br/>Frente al Parque de la Vida.&lt;br/> &lt;b>Teléfono:&lt;/b> 6114498 - 6114499</string>
+    <!--Barranquilla-->
+    <string name="elprado">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 46 # 84 - 170&lt;br/> &lt;b>Teléfono:&lt;/b> 3584094 - 3587511</string>
+    <!--Bogotá-->
+    <string name="cedritos">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 19 # 142 - 21&lt;br/> &lt;b>Teléfono:&lt;/b> 6483869-2742795</string>
+    <string name="ciudadsalitre">&lt;b>Dirección:&lt;/b> &lt;br/>Av. La Esperanza # 69B - 59&lt;br/>Local 1&lt;br/>&lt;b>Teléfono:&lt;/b> 4045888 - 4045952</string>
+    <string name="quintacamacho">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 11 # 70 A - 17&lt;br/>&lt;b>Teléfono:&lt;/b> 2493302</string>
+    <string name="santabarbara">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 19 # 123 - 82&lt;br/>&lt;b>Teléfono:&lt;/b> 2147308 - 6207177</string>
+    <!--Bucaramanga-->
+    <string name="canaveral">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 26 # 30 - 12&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="cabeceraprincipal">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 33 # 41 - 17&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="centro">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 36 # 20 - 04&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="cuartaetapa">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 35 A # 48 - 109&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="delapiedecuesta">&lt;b>Dirección:&lt;/b> &lt;br/>Centro Comercial&lt;br/>De La Cuesta Piso 2&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="diamantedos">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 24 # 86 - 07&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="giron">&lt;b>Dirección:&lt;/b> &lt;br/>Urbanización Villa Campestre&lt;br/>Carrera 21 A # 24 A - 16&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="lagosuno">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 29 # 11 - 96 Lagos 1&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="provenza">&lt;b>Dirección:&lt;/b> &lt;br/>Calle 105 # 24 - 105&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="maderopie">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 15 # 3 - 28&lt;br/>Manzana D Casa 4&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="quintapie">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 15 # 7B Norte - 81&lt;br/>Autopista Piedecuesta&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="realminas">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 8 # 61 - 137&lt;br/>Metrópolis - Local 6&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="sanalonso">&lt;b>Dirección:&lt;/b> &lt;br/>Carrera 30 # 18 - 72&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <string name="tejar">&lt;b>Dirección:&lt;/b> &lt;br/>Av. Circunvalar 35 # 92 - 71&lt;br/>&lt;b>Teléfono:&lt;/b> 6342626</string>
+    <!--cali-->
+
+    <string-array name="ciudades">
+        <item>Armenia</item>
+        <item>Barrancabermeja</item>
+        <item>Barranquilla</item>
+        <item>Bogotá</item>
+        <item>Bucaramanga</item>
+        <item>Cali</item>
+        <item>Cartago</item>
+        <item>Cucúta</item>
+        <item>Espinal</item>
+        <item>Girardot</item>
+        <item>Ibagué</item>
+        <item>Manizales</item>
+        <item>Medellin</item>
+        <item>Neiva</item>
+        <item>Ocaña</item>
+        <item>Palmira</item>
+        <item>Pereira</item>
+        <item>Popayán</item>
+        <item>Santa Marta</item>
+        <item>Tuluá</item>
+        <item>Valledupar</item>
+        <item>Todos</item>
+    </string-array>
+
 </resources>

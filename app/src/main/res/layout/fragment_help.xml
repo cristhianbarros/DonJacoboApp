@@ -5,23 +5,38 @@
     android:orientation="vertical"
     tools:context="com.donjacoboapp.fragments.HelpFragment">
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:background="#422710"
-        android:padding="8dp"
-        android:textColor="#FFF"
-        android:text="Puntos de Atención"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
-
-    <fragment
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:id="@+id/map"
-        android:tag="map"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="#422710"
+            android:padding="8dp"
+            android:textColor="#FFF"
+            android:text="Puntos de Atención"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <fragment
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/map"
+            android:tag="map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ciudades"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 </LinearLayout>
